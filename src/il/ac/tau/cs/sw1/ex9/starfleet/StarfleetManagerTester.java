@@ -41,7 +41,7 @@ public class StarfleetManagerTester {
 
 		System.out.println();
 		System.out.println("Highest ranking officer per ship:");
-		Map<Officer,Spaceship> officersToShipsMap = StarfleetManager.getHighestRankingOfficerPerShip(fleet); 
+		Map<Officer,Spaceship> officersToShipsMap = StarfleetManager.getHighestRankingOfficerPerShip(fleet);
 		SortedSet<Officer> sortedOfficers = new TreeSet<>(new Comparator<Officer>() {
 
 			@Override
@@ -72,7 +72,7 @@ public class StarfleetManagerTester {
 		List<Spaceship> fleet = new ArrayList<>();
 
 		fleet.add(new TransportShip("USS Astral Queen", 2396, 5.1f, generateCrew (9,14), 2000,5000));
-		fleet.add(new TransportShip("USS Lantree", 2457, 5.1f, generateCrew (4,5), 3000,10000));	
+		fleet.add(new TransportShip("USS Lantree", 2457, 5.1f, generateCrew (4,5), 3000,10000));
 
 		List<Weapon> weapons = new ArrayList<Weapon>();
 		weapons.add(new Weapon("Laser Cannons",10,110));
@@ -92,14 +92,14 @@ public class StarfleetManagerTester {
 		weapons.add(new Weapon("Laser Cannons",10,110));
 		weapons.add(new Weapon("Photon Torpedoes",120,260));
 		fleet.add(new Bomber("USS Yamaguchi ",2416,9.9f, generateCrew (21,212), weapons,5));
-				
+
 		weapons = new ArrayList<Weapon>();
 		weapons.add(new Weapon("Laser Cannons",10,100));
 		weapons.add(new Weapon("Evaporator",30,300));
 		Set<Cylon> cylons = new HashSet<>();
 		cylons.add(new Cylon("Sharon", 35, 35, 5));
 		fleet.add(new CylonRaider("Raider 1", 2056, 3.5f, cylons, weapons));
-		
+
 		weapons = new ArrayList<Weapon>();
 		weapons.add(new Weapon("Laser Cannons",10,100));
 		weapons.add(new Weapon("Evaporator",30,300));
@@ -115,9 +115,9 @@ public class StarfleetManagerTester {
 		return fleet;
 	}
 
-	
-	
-	
+
+
+
 	// Generates a set containing crew-member objects containing synthesized data
 	private static Set<CrewMember> generateCrew (int numberOfOfficers, int numberOfCrewmen) {
 
@@ -156,17 +156,17 @@ public class StarfleetManagerTester {
 		return  nameRepository[(crewId % (nameRepository.length))] + " #" +crewId;
 	}
 
-	private static Integer generateAge() {	
+	private static Integer generateAge() {
 		final Integer[] ageRepository = new Integer[]{31, 47, 22, 21, 57, 104, 28, 19, 35, 64};
 		return ageRepository[crewId % (ageRepository.length)];
 	}
 
-	private static Integer generateYearsInService() {	
+	private static Integer generateYearsInService() {
 		final Integer[] yearsRepository =  new Integer[]{7, 2, 14, 6, 32, 16, 12, 2, 1, 17, 5};
 		return yearsRepository[crewId % (yearsRepository.length)];
 	}
 
-	private static OfficerRank generateRank() {	
+	private static OfficerRank generateRank() {
 		final OfficerRank[] ranksRepository =  new OfficerRank[]{OfficerRank.Ensign, OfficerRank.Ensign, OfficerRank.Commander, OfficerRank.Lieutenant, OfficerRank.Ensign, OfficerRank.LieutenantCommander,  OfficerRank.Lieutenant,};
 		return ranksRepository[crewId % (ranksRepository.length)];
 	}

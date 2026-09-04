@@ -10,7 +10,7 @@ Fighter
 	AnnualMaintenanceCost=8990
 	WeaponArray=[Weapon [name=Laser Cannons, firePower=10, annualMaintenanceCost=110], Weapon [name=Quantum Torpedoes, firePower=120, annualMaintenanceCost=100], Weapon [name=TAU Phasers, firePower=150, annualMaintenanceCost=280]]
 Bomber
-	Name=USS Yamaguchi 
+	Name=USS Yamaguchi
 	CommissionYear=2416
 	MaximalSpeed=9.9
 	FirePower=140
@@ -108,7 +108,7 @@ Highest ranking officer per ship:
 	Captain	FitzRoy #163	USS Galaxy
 	Captain	Lee Adama	Viper1
 	Captain	Nemo #9	USS Astral Queen
-	Captain	Picard #194	USS Yamaguchi 
+	Captain	Picard #194	USS Yamaguchi
 	Captain	Sisko #52	USS Defiant
 
 Officer ranks sorted ascendingly by popularity:

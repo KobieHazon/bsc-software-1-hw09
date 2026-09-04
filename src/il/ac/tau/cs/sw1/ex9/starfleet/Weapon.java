@@ -9,19 +9,19 @@ public class Weapon {
 		this.firePower = firePower;
 		this.annualMaintenanceCost = annualMaintenanceCost;
 	}
-	
+
 	public String getName(){
 		return name;
 	}
-	
+
 	public int getFirePower(){
 		return firePower;
 	}
-	
+
 	public int getAnnualMaintenanceCost(){
 		return annualMaintenanceCost;
 	}
-	
+
 	public String toString(){
 		StringBuffer sb = new StringBuffer();
 		sb.append("Weapon [");

@@ -7,16 +7,16 @@ public class Bomber extends AbstractBattleSpaceship{
 
 	public int numberOfTechnicians;
 	private final int bomberCost = 5000;
-	
+
 	public Bomber(String name, int commissionYear, float maximalSpeed, Set<CrewMember> crewMembers, List<Weapon> weapons, int numberOfTechnicians){
 		super(name, commissionYear, maximalSpeed, crewMembers, weapons);
 		this.numberOfTechnicians = numberOfTechnicians;
 	}
-	
+
 	public int getNumberOfTechnicians() {
 		return this.numberOfTechnicians;
 	}
-	
+
 	@Override
 	public int getAnnualMaintenanceCost() {
 		return (int) (bomberCost + super.getWeaponCost()*(1 - this.numberOfTechnicians*0.1));
@@ -24,7 +24,7 @@ public class Bomber extends AbstractBattleSpaceship{
 
 	@Override
 	public String toString() {
-		return "Bomber" + System.lineSeparator() + super.toString() + System.lineSeparator() + 
+		return "Bomber" + System.lineSeparator() + super.toString() + System.lineSeparator() +
 				"\tNumberOfTechnicians=" + this.getNumberOfTechnicians();
 	}
 }

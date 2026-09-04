@@ -28,14 +28,14 @@ public class StarfleetManager {
 
 			@Override
 			public int compare(Spaceship o1, Spaceship o2) {
-				if (o1.getFirePower() < o2.getFirePower()) 
+				if (o1.getFirePower() < o2.getFirePower())
 					return 1;
-				else if (o1.getFirePower() > o2.getFirePower()) 
+				else if (o1.getFirePower() > o2.getFirePower())
 					return -1;
 				else {
 					if (o1.getCommissionYear() < o2.getCommissionYear())
 						return 1;
-					else if (o1.getCommissionYear() > o2.getCommissionYear()) 
+					else if (o1.getCommissionYear() > o2.getCommissionYear())
 						return -1;
 					else
 						return o1.getName().compareTo(o2.getName());
@@ -107,7 +107,7 @@ public class StarfleetManager {
 	}
 
 	/*
-	 * Returns the average age of all officers serving on board of the given fleet's ships. 
+	 * Returns the average age of all officers serving on board of the given fleet's ships.
 	 */
 	public static float getAverageAgeOfFleetOfficers(Collection<Spaceship> fleet) {
 		int ageSum = 0;
@@ -141,7 +141,7 @@ public class StarfleetManager {
 			}
 			if (officersOnShip.size() != 0) {
 				Collections.sort(officersOnShip, new Comparator<Officer>() {
-					
+
 					@Override
 					public int compare(Officer o1, Officer o2) {
 						return o1.getRank().compareTo(o2.getRank());
@@ -183,7 +183,7 @@ public class StarfleetManager {
 				else
 					return o1.getValue().compareTo(o2.getValue());
 			}
-			
+
 		});
 		return popularity;
 	}

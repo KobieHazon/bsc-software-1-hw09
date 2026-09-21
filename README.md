@@ -1,6 +1,6 @@
 # BSc Software 1 - Homework 9
 
-- Course: BSc Computer Science.
+- Course: Software 1.
 
 ## Contents
 

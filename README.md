@@ -1,6 +1,9 @@
 # BSc Software 1 - Homework 9
 
-A historical archive of my CS BSc coursework.
+- Course: BSc Computer Science.
+- Available copy: June 2018.
+- Assignment brief: The matching Homework 9 handout was not found.
+- Maintenance changes: the current version adds local compatibility stubs for the missing riddle scaffold classes `A1`, `A2`, and `A3`, plus a maintained test harness and repeatable Makefile validation.
 
 ## Contents
 
@@ -8,13 +11,6 @@ This homework contains a Java object-modeling assignment and small riddle packag
 
 - `il.ac.tau.cs.sw1.ex9.starfleet` - crew members, officers, Cylons, weapons, spaceships, battle ships, transport ships, and fleet aggregation utilities.
 - `il.ac.tau.cs.sw1.ex9.riddles` - compact inheritance, polymorphism, exception, and iterator exercises.
-
-## Provenance
-
-- Era: CS BSc.
-- Last recovered work: June 2018.
-- Original handout status: the exact matching Homework 9 handout was not recovered.
-- Maintenance changes: the current version adds local compatibility stubs for the missing riddle scaffold classes `A1`, `A2`, and `A3`, plus a maintained test harness and repeatable Makefile validation.
 
 ## Tech Stack
 

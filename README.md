@@ -1,9 +1,6 @@
 # BSc Software 1 - Homework 9
 
 - Course: BSc Computer Science.
-- Available copy: June 2018.
-- Assignment brief: The matching Homework 9 handout was not found.
-- Maintenance changes: the current version adds local compatibility stubs for the missing riddle scaffold classes `A1`, `A2`, and `A3`, plus a maintained test harness and repeatable Makefile validation.
 
 ## Contents
 
@@ -32,4 +29,8 @@ make clean
 
 ## Notes
 
-The recovered riddle answers referenced hidden scaffold classes that were not present in the local submission. The added `A1`, `A2`, and `A3` files are minimal local scaffolds for compilation and validation only; my recovered `B` answers are preserved.
+The riddle answers referenced hidden scaffold classes that were not present in the local submission. The added `A1`, `A2`, and `A3` files are minimal local scaffolds for compilation and validation only; my `B` answers are preserved.
+
+## Written work
+
+[My submitted class diagram](solution/class-diagram.pdf) accompanies the code.
